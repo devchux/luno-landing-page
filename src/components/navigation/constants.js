@@ -1,0 +1,1 @@
+export const topNavItems = ['BTC/NGN 49,709,050', 'FEATURES', 'WALLET', 'EXCHANGE', 'SIGN IN'];
