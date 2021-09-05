@@ -2,13 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Urbanist';
+
+@font-face {
+  font-family: 'GreyCliff';
+  src: url('./assets/fonts/greycliff.ttf');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial,sans-serif;
+  font-family: 'Urbanist', Helvetica Neue, Helvetica, Arial,sans-serif;
+}
+
+.font-greycliff {
+  font-family: 'GreyCliff';
+}
+
+.nav-right span {
+  font-size: 0.91rem;
 }
 
 .header-ul {
@@ -20,5 +33,54 @@
   background-repeat: no-repeat;
   background-position: 0;
   background-size: contain;
-  padding-left: 3em;
+  padding-left: 2em;
+}
+
+header > .content-wrapper .button-wrapper {
+  width: 97%;
+}
+
+header > .content-wrapper .text-wrapper > .text-title {
+  font-size: 2.7rem;
+}
+
+.features .contents {
+  max-width: 950px;
+  margin: 50px auto 0;
+}
+.feature-card {
+  position: relative;
+}
+
+.feature-card::before {
+  content: '';
+  width: 40%;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  background-color: #cccccc;
+  border-radius: 45%;
+  display: none;
+  animation: spread 3s ease-out;
+}
+
+@keyframes spread {
+  0% {
+    width: 40%;
+    left: 30%;
+    border-radius: 45%;
+  }
+
+  100% {
+    width: 100%;
+    background: red;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}
+
+.feature-card:active::before {
+  display: block;
 }

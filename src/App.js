@@ -1,11 +1,13 @@
-import { Fragment } from "react";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <Fragment>
-      <Layout />
-    </Fragment>
+    <Router>
+      <Switch>
+        <Layout />
+      </Switch>
+    </Router>
   );
 }
 

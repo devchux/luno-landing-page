@@ -1,6 +1,6 @@
-const RoundButton = ({ text, style }) => (
+const RoundButton = ({ text, style, className }) => (
   <button
-    className="p-3 px-6 bg-blue-500 rounded-full text-white font-black tracking-widest"
+    className={`bg-blue-500 rounded-full text-white font-black tracking-widest font-greycliff ${className}`}
     style={style}
   >
     {text}
