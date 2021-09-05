@@ -10,7 +10,7 @@ const Navbar = () => (
     </div>
     <div className="nav-right font-black w-9/12 justify-end items-center text-white hidden sm:flex tracking-widest">
       {topNavItems.map((item) => (
-        <span className="p-2.5 font-greycliff" key={item}>
+        <span className="mx-2.5 font-greycliff cursor-pointer" key={item}>
           {item}
         </span>
       ))}
