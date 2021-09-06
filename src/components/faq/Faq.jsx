@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <div>
       <TrustTopCurveLogo className="bg-primary text-white" />
-      <div>
+      <div className="py-6 pt-10">
         <Title title="Frequently asked questions" />
         <div className="p-10 px-56">
           <div>
@@ -60,33 +60,40 @@ const Faq = () => {
               className="py-6"
             />
             <Accordion title="How do I make a deposit with a Bank Transfer in Australia?">
-              Sign in to the Luno app, select Wallets, then Deposit on your AUD
-              wallet. From there, follow these easy steps:
-              <ol class="list-decimal">
-                <li>From the selection choose Bank Transfer</li>
-                <li>Enter the amount you'd like to deposit</li>
-                <li>
-                  Next, you’ll see a BSB and an account number - these are
-                  personalised for you. Whenever you make a deposit to Luno,
-                  please use these details
-                </li>
-                <li>
-                  Log in to your banking app and make a deposit using the bank
-                  details provided. You can leave the reference field empty
-                </li>
-                <li>
-                  Funds can take anywhere from a few seconds up to 2 business
-                  days to appear in your AUD wallet – this is dependent on your
-                  financial institution
-                </li>
-                <li>
-                  Once funds have arrived in your wallet, you’ll be able make
-                  your crypto purchase
-                </li>
-              </ol>
-              Check out our{" "}
-              <span className="text-blue-500">help centre article</span> for
-              more information on funding your AUD wallet.
+              <span>
+                Sign in to the Luno app, select <b>Wallets</b>, then{" "}
+                <b>Deposit</b> on your <b>AUD wallet</b>. From there, follow
+                these easy steps:
+                <ol class="list-decimal p-6 px-12">
+                  <li className="pt-3">
+                    From the selection choose Bank Transfer
+                  </li>
+                  <li className="pt-3">
+                    Enter the amount you'd like to deposit
+                  </li>
+                  <li className="pt-3">
+                    Next, you’ll see a BSB and an account number - these are
+                    personalised for you. Whenever you make a deposit to Luno,
+                    please use these details
+                  </li>
+                  <li className="pt-3">
+                    Log in to your banking app and make a deposit using the bank
+                    details provided. You can leave the reference field empty
+                  </li>
+                  <li className="pt-3">
+                    Funds can take anywhere from a few seconds up to 2 business
+                    days to appear in your AUD wallet – this is dependent on
+                    your financial institution
+                  </li>
+                  <li className="pt-3">
+                    Once funds have arrived in your wallet, you’ll be able make
+                    your crypto purchase
+                  </li>
+                </ol>
+                Check out our{" "}
+                <span className="text-blue-500">help centre article</span> for
+                more information on funding your AUD wallet.
+              </span>
             </Accordion>
             <Accordion title="Can I use PayID to buy Bitcoin in Australia?">
               Our PayID deposit method allows Australian customers to deposit

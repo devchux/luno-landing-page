@@ -18,7 +18,7 @@ const Accordion = ({ title, children }) => {
         ></span>
       </div>
       <div className={expanded ? "show" : "body"}>
-        <p>{children}</p>
+        <p className="text-base">{children}</p>
       </div>
     </div>
   );
