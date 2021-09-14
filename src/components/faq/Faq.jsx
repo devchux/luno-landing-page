@@ -8,7 +8,7 @@ const Faq = () => {
       <TrustTopCurveLogo className="bg-primary text-white" />
       <div className="py-6 pt-10">
         <Title title="Frequently asked questions" />
-        <div className="p-10 px-56">
+        <div className="p-3 sm:p-10 sm:px-56">
           <div>
             <Title
               title="Using luno"
@@ -64,7 +64,7 @@ const Faq = () => {
                 Sign in to the Luno app, select <b>Wallets</b>, then{" "}
                 <b>Deposit</b> on your <b>AUD wallet</b>. From there, follow
                 these easy steps:
-                <ol class="list-decimal p-6 px-12">
+                <ol className="list-decimal p-6 px-12">
                   <li className="pt-3">
                     From the selection choose Bank Transfer
                   </li>

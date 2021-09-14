@@ -16,6 +16,10 @@
   font-family: 'Urbanist', Helvetica Neue, Helvetica, Arial,sans-serif;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 .font-greycliff {
   font-family: 'GreyCliff';
 }
@@ -48,8 +52,14 @@ header > .content-wrapper .text-wrapper > .text-title {
   max-width: 950px;
   margin: 50px auto 0;
 }
+
+.features .contents .cards {
+  width: calc(50% - 40px);
+}
+
 .feature-card {
   position: relative;
+  padding: 45px;
 }
 
 .feature-card::before {
@@ -116,4 +126,78 @@ header > .content-wrapper .text-wrapper > .text-title {
 .is-expanded::after {
   transform: rotate(225deg);
   transition: all .3s;
+}
+
+.select-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid;
+  margin: 0 4px;
+}
+.select {
+  position: relative;
+}
+.fieldset {
+  border: 0.5px solid #12326b;
+  border-radius: 0.375rem;
+}
+
+.fieldset .legend {
+  font-size: 12px;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.fieldset:hover, .fieldset:focus {
+  border-width: 2px;
+}
+
+.select .options {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px #cccccc;
+  border-radius: 2px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.select .options .option {
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.select .options .option:hover {
+  background-color: rgba(78, 58, 58, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  header > .content-wrapper .text-wrapper > .text-title {
+    font-size: 2.2rem;
+  }
+
+  .header-ul > li {
+    background-size: 25px;
+    background-position-y: top;
+  }
+
+  .features .contents {
+    margin: 100px auto 0;
+  }
+
+  .features .contents .cards {
+    width: 100%;
+  }
+
+  .feature-card {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .feature-buy-button {
+    margin: 0 calc(100% - 83.33% - 1.5rem) 0;
+  }
 }

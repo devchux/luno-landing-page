@@ -7,27 +7,36 @@ import { cardItems, featureImageMap } from "./constants";
 const Feature = () => {
   const [clicked, setClicked] = useState("Buy and sell with ease");
   return (
-    <div className="p-6 py-16 features">
+    <div className="p-0 sm:p-6 py-16 features">
       <Title title="App features" />
-      <div className="sm:flex justify-between items-center contents">
-        <div className="w-1/2 pt-20">
+      <div className="flex justify-between items-center flex-col sm:flex-row contents">
+        <div className="w-full sm:w-1/2 pt-20 hidden sm:flex justify-center sm:justify-end">
           <img
             src={featureImageMap[clicked]}
             alt="feature-img"
-            className="w-10/12 float-right"
+            className="w-10/12"
           />
         </div>
-        <div style={{ width: "calc(50% - 40px)" }}>
+        <div className="cards pt-20 sm:pt-0">
           {cardItems.map(({ title, body }) => (
-            <FeatureCard
-              key={title}
-              className={title === clicked && "bg-gray-200"}
-              title={title}
-              body={body}
-              onClick={() => setClicked(title)}
-            />
+            <>
+              <div className="w-full flex justify-center sm:hidden">
+                <img
+                  src={featureImageMap[title]}
+                  alt="feature-img"
+                  className="w-10/12"
+                />
+              </div>
+              <FeatureCard
+                key={title}
+                className={title === clicked && "sm:bg-gray-200"}
+                title={title}
+                body={body}
+                onClick={() => setClicked(title)}
+              />
+            </>
           ))}
-          <RoundButton text="BUY BITCOIN" className="w-10/12 mt-10 p-3 px-6" />
+          <RoundButton text="BUY BITCOIN" className="w-10/12 mt-10 p-3 px-6 feature-buy-button" />
         </div>
       </div>
     </div>

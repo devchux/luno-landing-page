@@ -12,13 +12,13 @@ const Accordion = ({ title, children }) => {
         } pr-6 cursor-pointer`}
         onClick={toggle}
       >
-        <span className="font-medium text-primary text-lg">{title}</span>
+        <span className="font-semibold text-primary text-lg w-10/12">{title}</span>
         <span
           className={`accordion-carret ${expanded ? "is-expanded" : ""}`}
         ></span>
       </div>
       <div className={expanded ? "show" : "body"}>
-        <p className="text-base">{children}</p>
+        <div className="text-base">{children}</div>
       </div>
     </div>
   );

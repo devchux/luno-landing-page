@@ -12,7 +12,7 @@ const Referral = () => (
         bgColor="text-white"
         className="text-white"
       />
-      <div className="sm:flex justify-around items-center p-10 px-64">
+      <div className="sm:flex justify-around items-center p-10 sm:px-64">
         <div className="sm:w-5/12">
           <img src={rewards} alt="rewards" className="w-10/12" />
         </div>

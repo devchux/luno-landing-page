@@ -5,7 +5,7 @@ import computer from "../../assets/images/computer.png"
 const Trade = () => (
   <div className="text-center">
     <TrustTopCurveLogo className=" text-gray-100" />
-    <div className="sm:flex justify-between items-center flex-row-reverse p-10 bg-gray-100">
+    <div className="flex justify-between items-center flex-col-reverse sm:flex-row-reverse p-10 bg-gray-100">
       <div className="sm:w-7/12">
         <img src={computer} alt="trade with pc" />
       </div>

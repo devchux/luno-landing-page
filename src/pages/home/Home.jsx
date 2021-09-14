@@ -1,6 +1,7 @@
 import Trust from "../../components/credibility/Trust";
 import Faq from "../../components/faq/Faq";
 import Feature from "../../components/features/Feature";
+import Footer from "../../components/footer/Footer";
 import GetStarted from "../../components/get-started/GetStarted";
 import NeverLate from "../../components/get-started/NeverLate";
 import HomeHeader from "../../components/header/HomeHeader";
@@ -17,6 +18,7 @@ const Home = () => (
     <Referral />
     <Faq />
     <NeverLate />
+    <Footer />
   </>
 );
 
