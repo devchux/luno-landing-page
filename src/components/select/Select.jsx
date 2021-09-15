@@ -3,10 +3,10 @@ import en from "../../assets/images/en.png";
 import fr from "../../assets/images/fr.png";
 import id from "../../assets/images/id.png";
 
-const Select = ({ full }) => {
+const Select = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="select w-full sm:w-48">
+    <div className="select w-full sm:w-48 sm:hidden lg:block">
       <fieldset
         className="fieldset w-full p-3"
         tabIndex={0}

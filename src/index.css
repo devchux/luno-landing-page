@@ -51,6 +51,7 @@ header > .content-wrapper .text-wrapper > .text-title {
 .features .contents {
   max-width: 950px;
   margin: 50px auto 0;
+  display: flex;
 }
 
 .features .contents .cards {

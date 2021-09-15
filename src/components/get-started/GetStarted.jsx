@@ -4,7 +4,7 @@ import { steps } from "./constants";
 const GetStarted = () => (
   <div className="text-center p-6 py-16">
     <Title title="Get started in just a few minutes" />
-    <div className="flex flex-col sm:flex-row justify-between p-3 sm:p-24 py-8">
+    <div className="flex flex-col sm:flex-row justify-between p-3 lg:p-24 py-8">
     {steps.map(({ image, title, body }) => (
       <div key={title} className="flex flex-col items-center sm:w-1/3 p-6">
         <div>

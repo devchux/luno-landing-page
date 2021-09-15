@@ -7,8 +7,8 @@ import googlePlay from "../../assets/icons/svg/store-google.svg";
 
 const HomeHeader = () => (
   <Header>
-    <div className="content-wrapper p-14 sm:p-10 md:pr-48 py-20 sm:py-9 block sm:flex justify-between items-start">
-      <div className="px-12 pt-3 hidden md:block">
+    <div className="content-wrapper p-14 sm:p-10 lg:pr-48 py-20 sm:py-9 block sm:flex justify-between items-start">
+      <div className="px-12 pt-3 hidden lg:block">
         <img src={threePhones} alt="three-phones" className="w-10/12" />
       </div>
       <div className="md:py-6 md:px-20">

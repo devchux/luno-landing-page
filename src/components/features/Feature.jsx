@@ -10,14 +10,14 @@ const Feature = () => {
     <div className="p-0 sm:p-6 py-16 features">
       <Title title="App features" />
       <div className="flex justify-between items-center flex-col sm:flex-row contents">
-        <div className="w-full sm:w-1/2 pt-20 hidden sm:flex justify-center sm:justify-end">
+        <div className="sm:w-1/2 pt-20 hidden sm:flex justify-center sm:justify-end">
           <img
             src={featureImageMap[clicked]}
             alt="feature-img"
             className="w-10/12"
           />
         </div>
-        <div className="cards pt-20 sm:pt-0">
+        <div className="cards pt-20 sm:pt-0 sm:w-1/2">
           {cardItems.map(({ title, body }) => (
             <>
               <div className="w-full flex justify-center sm:hidden">

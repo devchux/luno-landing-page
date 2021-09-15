@@ -8,7 +8,7 @@ const Faq = () => {
       <TrustTopCurveLogo className="bg-primary text-white" />
       <div className="py-6 pt-10">
         <Title title="Frequently asked questions" />
-        <div className="p-3 sm:p-10 sm:px-56">
+        <div className="p-3 lg:p-10 lg:px-56">
           <div>
             <Title
               title="Using luno"

@@ -8,9 +8,9 @@ const Navbar = () => (
       <HamburgerLogo color="#fff" />
       <FullLogo color="#fff" />
     </div>
-    <div className="nav-right font-black w-9/12 justify-end items-center text-white hidden sm:flex tracking-widest">
+    <div className="nav-right font-black w-9/12 justify-end items-center text-white flex tracking-widest">
       {topNavItems.map((item) => (
-        <span className="mx-2.5 font-greycliff cursor-pointer" key={item}>
+        <span className="mx-2.5 font-greycliff cursor-pointer hidden lg:inline" key={item}>
           {item}
         </span>
       ))}

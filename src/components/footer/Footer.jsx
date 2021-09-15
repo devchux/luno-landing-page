@@ -3,37 +3,45 @@ import { FullLogo, Twitter, Youtube, LinkedIn } from "../../assets/icons";
 import { about, resources, legal, products } from "./constants";
 
 const Footer = () => (
-  <div className="bg-gray-100 sm:flex justify-around p-14 sm:px-40 pb-20">
-    <div className="sm:w-2/12 flex sm:block justify-center sm:justify-start pb-14 sm:pb-0">
+  <div className="bg-gray-100 lg:flex justify-around p-14 lg:px-40 pb-20">
+    <div className="lg:w-2/12 flex lg:block justify-center lg:justify-start pb-14 lg:pb-0">
       <FullLogo className="text-primary" />
     </div>
-    <div className="hidden sm:flex justify-around sm:px-4 sm:w-8/12">
-      <div className="sm:w-3/12">
+    <div className="hidden sm:block lg:flex justify-around lg:px-4 lg:w-8/12">
+      <div className="lg:w-3/12 sm:flex sm:justify-between sm:w-11/12 lg:w-full lg:block sm:py-3 lg:py-0">
         <div className="text-primary font-black font-greycliff">ABOUT</div>
-        {about.map((item) => (
-          <div className="text-primary pt-4">{item}</div>
-        ))}
+        <div className="w-6/12">
+          {about.map((item) => (
+            <div className="text-primary pt-4">{item}</div>
+          ))}
+        </div>
       </div>
-      <div className="sm:w-3/12">
+      <div className="lg:w-3/12 sm:flex sm:justify-between sm:w-11/12 lg:w-full lg:block sm:py-3 lg:py-0">
         <div className="text-primary font-black font-greycliff">RESOURCES</div>
-        {resources.map((item) => (
-          <div className="text-primary pt-4">{item}</div>
-        ))}
+        <div className="w-6/12">
+          {resources.map((item) => (
+            <div className="text-primary pt-4">{item}</div>
+          ))}
+        </div>
       </div>
-      <div className="sm:w-3/12">
+      <div className="lg:w-3/12 sm:flex sm:justify-between sm:w-11/12 lg:w-full lg:block sm:py-3 lg:py-0">
         <div className="text-primary font-black font-greycliff">PRODUCTS</div>
-        {products.map((item) => (
-          <div className="text-primary pt-4">{item}</div>
-        ))}
+        <div className="w-6/12">
+          {products.map((item) => (
+            <div className="text-primary pt-4">{item}</div>
+          ))}
+        </div>
       </div>
-      <div className="sm:w-3/12">
+      <div className="lg:w-3/12 sm:flex sm:justify-between sm:w-11/12 lg:w-full lg:block sm:py-3 lg:py-0">
         <div className="text-primary font-black font-greycliff">LEGAL</div>
-        {legal.map((item) => (
-          <div className="text-primary pt-4">{item}</div>
-        ))}
+        <div className="w-6/12">
+          {legal.map((item) => (
+            <div className="text-primary pt-4">{item}</div>
+          ))}
+        </div>
       </div>
     </div>
-    <div className="sm:w-2/12">
+    <div className="lg:w-2/12">
       <Select />
       <div className="flex sm:hidden justify-between text-primary mt-10">
         <div>
@@ -55,12 +63,14 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="flex gap-6 py-10 justify-center sm:justify-start">
+      <div className="flex gap-6 py-10 justify-center lg:justify-start">
         <Twitter />
         <Youtube />
         <LinkedIn />
       </div>
-      <div className="text-center sm:text-left">&copy; Copyright {new Date().getFullYear()}</div>
+      <div className="text-center lg:text-left">
+        &copy; Copyright {new Date().getFullYear()}
+      </div>
     </div>
   </div>
 );

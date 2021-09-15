@@ -6,13 +6,13 @@ import RoundButton from "../buttons/RoundButton";
 const Referral = () => (
   <div className="text-center">
     <TrustTopCurveLogo className="bg-gray-100 text-primary" />
-    <div className="pt-10 bg-primary">
+    <div className="py-20 bg-primary">
       <Title
         title="Earn free Bitcoin by inviting your friends!"
         bgColor="text-white"
-        className="text-white"
+        className="text-white refeeral-title"
       />
-      <div className="sm:flex justify-around items-center p-10 sm:px-64">
+      <div className="sm:flex justify-around items-center p-10 py-14 lg:px-64">
         <div className="sm:w-5/12">
           <img src={rewards} alt="rewards" className="w-10/12" />
         </div>
